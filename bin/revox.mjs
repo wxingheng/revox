@@ -18,6 +18,16 @@ program
     import('../lib/commands/build.js').then(module => module.default());
   });
 
+// 等定义 dev 命令
+program
+  .command('dev')
+  .description('开发项目')
+  .action(() => {
+    console.log(chalk.green('正在开发项目...'));
+    // 调用开发命令的实现
+    import('../lib/commands/dev.js').then(module => module.default());
+  });
+
 // 定义 start 命令
 program
   .command('start')
