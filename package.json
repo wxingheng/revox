@@ -13,6 +13,6 @@
     "commander": "^12.1.0"
   },
   "bin": {
-    "my-cli": "./bin/revox.mjs"
+    "revox": "./bin/revox.mjs"
   }
 }

@@ -103,7 +103,26 @@ Revox 支持多种项目结构，建议遵循常见的 React 项目模式。
 Revox 助力 React 开发者高效完成从开发到生产的流程，提升项目质量和效率！
 
 
+## 开发
 
+```bash
+node bin/revox.mjs start
+```
+
+## 调试
+
+```bash
+   chmod +x bin/revox.mjs
+
+   npm link
+```
+
+
+
+
+## 项目结构
+
+```
 revox/
 │
 ├── bin/                   # CLI 入口文件
@@ -129,3 +148,4 @@ revox/
 ├── package.json           # 项目配置文件
 ├── README.md              # 项目说明文档
 └── .gitignore             # Git 忽略文件
+```
