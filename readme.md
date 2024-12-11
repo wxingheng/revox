@@ -118,7 +118,11 @@ node bin/revox.mjs start
 ```
 
 
+## example
 
+```bash
+ revox generate f rfc GroupBank
+```
 
 ## 项目结构
 
