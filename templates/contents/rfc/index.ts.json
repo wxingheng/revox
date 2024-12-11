@@ -1,0 +1,4 @@
+[
+    "import './index.less';",
+    "export { default } from './${1:ComponentName}';"
+]
