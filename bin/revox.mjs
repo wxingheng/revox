@@ -38,6 +38,18 @@ program
     import('../lib/commands/start.js').then(module => module.default());
   });
 
+
+
+// 定义 generate 命令
+program
+  .command('generate')
+  .description('生成项目')
+  .action(() => {
+    console.log(chalk.green('正在生成项目...'));
+    // 调用生成命令的实现
+    import('../lib/commands/generate.js').then(module => module.default());
+  });
+
 // 定义 test 命令
 program
   .command('test')
