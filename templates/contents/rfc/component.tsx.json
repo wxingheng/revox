@@ -1,0 +1,14 @@
+{
+    "body": [
+        "import React, { memo } from 'react';",
+        "",
+        "interface I${1:ComponentName}Props {}",
+        "",
+        "const ${1:ComponentName}: React.FC<I${1:ComponentName}Props> = () => {  ",
+        "  return <div className='${1:ComponentName}_component'>${1:ComponentName}</div>;",
+        "};",
+        "",
+        "export default memo(${1:ComponentName});"
+    ],
+    "file_name": "${1:ComponentName}.tsx"
+}

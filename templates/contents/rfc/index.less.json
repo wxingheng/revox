@@ -1,5 +1,9 @@
-[
-    ".${1:ComponentName}_component {",
-    "",
-    "}"
-]
+
+{
+    "body": [
+        ".${1:ComponentName}_component {",
+        "",
+        "}"
+    ],
+    "file_name": "index.less"
+}

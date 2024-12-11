@@ -1,4 +1,7 @@
-[
-    "import './index.less';",
-    "export { default } from './${1:ComponentName}';"
-]
+{
+    "body": [
+        "import './index.less';",
+        "export { default } from './${1:ComponentName}';"
+    ],
+    "file_name": "index.ts"
+}
