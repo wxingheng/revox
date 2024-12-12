@@ -1,0 +1,8 @@
+{
+  "body": [
+  "export const utilFunction = () => {",
+  "  // 工具函数实现",
+  "};"    
+  ],
+  "file_name": "index.ts"
+}
