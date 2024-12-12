@@ -1,11 +1,11 @@
 [
     "import React, { memo } from 'react';",
     "",
-    "interface I${1:ComponentName}Props {}",
+    "interface I${ComponentName}Props {}",
     "",
-    "const ${1:ComponentName}: React.FC<I${1:ComponentName}Props> = () => {  ",
-    "  return <div className='${1:ComponentName}_component'>${1:ComponentName}</div>;",
+    "const ${ComponentName}: React.FC<I${ComponentName}Props> = () => {  ",
+    "  return <div className='${ComponentName}_component'>${ComponentName}</div>;",
     "};",
     "",
-    "export default memo(${1:ComponentName});"
+    "export default memo(${ComponentName});"
 ]

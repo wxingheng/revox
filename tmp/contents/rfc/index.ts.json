@@ -1,7 +1,7 @@
 {
     "body": [
         "import './index.less';",
-        "export { default } from './${1:ComponentName}';"
+        "export { default } from './${ComponentName}';"
     ],
     "file_name": "index.ts"
 }

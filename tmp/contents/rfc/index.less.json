@@ -1,7 +1,7 @@
 
 {
     "body": [
-        ".${1:ComponentName}_component {",
+        ".${ComponentName}_component {",
         "",
         "}"
     ],
