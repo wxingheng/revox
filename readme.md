@@ -125,6 +125,10 @@ revox generate rfc.comp ExampleComponent
 revox generate rfc ExampleComponent
 ```
 
+### TODO
+- [ ] 支持自定义模板配置与管理
+- [ ] 插值自定义模板生成
+
 ---
 
 ### 📜 许可证
