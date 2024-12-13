@@ -16,11 +16,17 @@
 
 ## 🚀 快速开始
 
-### 全局安装
-
 ```bash
+# 安装
 npm install -g revox
+
+# 生成组件
+revox generate rfc.module MyButton
+
+# 转换现有组件为模板
+revox tool tmp ./src/components/MyComponent
 ```
+
 
 ### ✨ 功能详解
 
