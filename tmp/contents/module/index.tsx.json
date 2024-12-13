@@ -2,7 +2,7 @@
     "body": [
         "/**",
         " * @fileoverview 示例模块的入口文件",
-        " * @module ExampleModule",
+        " * @module ${ComponentName}",
         " */",
         "",
         "import React from 'react';",
@@ -13,21 +13,21 @@
         "",
         "/**",
         " * 示例模块主组件 - 待办事项管理器",
-        " * @component ExampleModule",
+        " * @component ${ComponentName}",
         " * @param {ModuleProps} props - 组件属性",
         " * @param {string} [props.title='待办事项列表'] - 模块标题",
         " * @returns {React.ReactElement} 渲染的模块组件",
         " *",
         " * @example",
         " * ```jsx",
-        " * <ExampleModule title='我的待办事项' />",
+        " * <${ComponentName} title='我的待办事项' />",
         " * ```",
         " */",
-        "const ExampleModule: React.FC<ModuleProps> = ({ title = '待办事项列表' }) => {",
+        "const ${ComponentName}: React.FC<ModuleProps> = ({ title = '${ComponentName} TODO' }) => {",
         "  return (",
         "    <ModuleProvider>",
         "      <div",
-        "        className='_example_module'",
+        "        className='_${ComponentName}'",
         "        style={{",
         "          padding: 20,",
         "          fontSize: 24,",
@@ -42,7 +42,7 @@
         "  );",
         "};",
         "",
-        "export default ExampleModule;"
+        "export default ${ComponentName};"
     ],
     "file_name": "index.tsx"
 }

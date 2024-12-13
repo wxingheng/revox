@@ -3,10 +3,10 @@
   "body": [
     "/**",
     " * @fileoverview 示例模块的样式文件",
-    " * @module ExampleModuleStyle",
+    " * @module ${ComponentName}Style",
     " */",
     "",
-    "._example_module {",
+    "._${ComponentName} {",
     "  background-color: #f3fff3;",
     "}"
   ],
