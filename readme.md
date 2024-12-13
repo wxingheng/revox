@@ -142,6 +142,9 @@ node bin/revox.mjs start
 
  revox tool tmp ExampleModule/index.tsx
 
+
+ revox generate rfc ExampleComponent
+
 ```
 
 ## 项目结构
