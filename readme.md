@@ -137,9 +137,13 @@ node bin/revox.mjs start
 
  revox tool tmp ExampleModule/index.tsx
 
- revox generate rfc ExampleComponent
+ revox generate rfc.module ExampleComponent
+
+ revox generate rfc.comp ExampleComponent
 
  revox generate rfc.revox.json ExampleComponent
+
+  revox generate rfc ExampleComponent
 
 
 ```
