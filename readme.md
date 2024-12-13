@@ -136,7 +136,11 @@ node bin/revox.mjs start
 
  revox generate c rfc ExampleContents
 
- revox generate c module ExampleModule123
+ revox generate c module ExampleModule
+
+ revox tool tmp ExampleModule
+
+ revox tool tmp ExampleModule/index.tsx
 
 ```
 

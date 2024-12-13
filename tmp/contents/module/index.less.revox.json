@@ -1,12 +1,11 @@
-
 {
   "body": [
     "/**",
     " * @fileoverview 示例模块的样式文件",
-    " * @module ${ComponentName}Style",
+    " * @module ExampleModuleStyle",
     " */",
     "",
-    "._${ComponentName} {",
+    "._ExampleModule {",
     "  background-color: #f3fff3;",
     "}"
   ],
