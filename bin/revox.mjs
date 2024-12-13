@@ -14,7 +14,12 @@ program
 program
   .command('generate <template> <name>')
   .alias('g') // 别名
-  .description('生成 React 组件/模块/文件/目录；eg：revox g rfc MyComponent')
+  .description(`生成 组件/模块/文件/目录
+ 示例:
+  $ revox g rfc MyComponent          # 生成基础组件
+  $ revox g rfc.module MyModule      # 生成完整模块
+  $ revox g rfc.comp Button -d src   # 指定输出目录
+  $ revox g rfc.context Theme -f     # 强制覆盖`)
   .option('-d, --dir <directory>', '指定输出目录', './')
   .option('-f, --force', '强制覆盖已存在的文件', false)
   .action((template, name, options) => {
@@ -38,12 +43,29 @@ program
 
 // 定义 tool 命令
 program
-  .command('tool')
-  .description('工具箱')
-  .action(() => {
-    console.log(chalk.green('正在打开工具箱...'));
-    // 调用工具箱命令的实现
-    import('../lib/commands/tool.js').then(module => module.default());
+  .command('tool <action> [source]')
+  .alias('t')
+  .description(`工具箱命令集
+示例:
+  $ revox tool tmp ./src/Button        # 转换组件为模板
+  $ revox tool tmp ./components/Modal   # 转换整个目录
+  $ revox tool tmp Button.tsx --root   # 保存到项目根目录`)
+  .option('-r, --root', '保存到项目根目录的 .revox 文件夹', false)
+  .action((action, source, options) => {
+    console.log(chalk.green('正在执行工具箱命令...'));
+    import('../lib/commands/tool.js')
+      .then(module => {
+        try {
+          module.default(action, source, options);
+        } catch (error) {
+          console.error(chalk.red('执行失败:'), error.message);
+          process.exit(1);
+        }
+      })
+      .catch(error => {
+        console.error(chalk.red('命令加载失败:'), error.message);
+        process.exit(1);
+      });
   });
 
 
