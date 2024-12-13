@@ -132,11 +132,11 @@ node bin/revox.mjs start
 ## example
 
 ```bash
- revox generate f rfc ExampleComponent
+#  revox generate f rfc ExampleComponent
 
- revox generate c rfc ExampleContents
+#  revox generate c rfc ExampleContents
 
- revox generate c module ExampleModule
+#  revox generate c module ExampleModule
 
  revox tool tmp ExampleModule
 
@@ -144,6 +144,9 @@ node bin/revox.mjs start
 
 
  revox generate rfc ExampleComponent
+
+ revox generate rfc.revox.json ExampleComponent
+
 
 ```
 
