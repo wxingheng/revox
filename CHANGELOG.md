@@ -5,6 +5,16 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+
+## [0.0.4] - 2024-12-13
+
+### 新增
+- 支持 generate 命令生成组件
+- 支持 convert 命令将现有组件转化为模板
+- 支持 template 命令管理模板
+- 支持 config 命令管理配置
+- 支持 help 命令查看帮助信息
+
 ## [0.0.3] - 2024-03-21
 
 ### 新增

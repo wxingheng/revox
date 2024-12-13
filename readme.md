@@ -11,7 +11,7 @@
 
 <h4>一个强大的 React 组件生成和管理工具，让开发更高效、更规范</h4>
 
-[English](./README_EN.md) | 简体中文
+[English](https://github.com/wxingheng/revox/blob/main/README_EN.md) | 简体中文
 
 </div>
 

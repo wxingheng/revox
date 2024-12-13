@@ -1,18 +1,56 @@
 {
   "name": "revox",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Revox 是一个强大的 CLI 工具，帮助开发者从命令行构建、开发、测试、部署和维护 React 应用。通过 Revox，您可以简化开发流程，同时保持对项目的全面掌控。",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node ./bin/revox.mjs",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
   },
+  "keywords": [
+    "react",
+    "cli",
+    "generator",
+    "scaffold",
+    "development-tool"
+  ],
   "author": "wxingheng",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
-    "commander": "^12.1.0"
+    "commander": "^12.1.0",
+    "inquirer": "^9.2.15",
+    "ora": "^8.0.1",
+    "fs-extra": "^11.2.0",
+    "ejs": "^3.1.9",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
   },
   "bin": {
     "revox": "./bin/revox.mjs"
-  }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxingheng/revox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wxingheng/revox/issues"
+  },
+  "homepage": "https://github.com/wxingheng/revox#readme"
 }
