@@ -12,12 +12,26 @@ program
 
 // 定义 generate 命令
 program
-  .command('generate')
-  .description('生成项目')
-  .action(() => {
-    console.log(chalk.green('正在生成项目...'));
-    // 调用生成命令的实现
-    import('../lib/commands/generate.js').then(module => module.default());
+  .command('generate <template> <name>')
+  .alias('g') // 别名
+  .description('生成 React 组件/模块/文件/目录；eg：revox g rfc MyComponent')
+  .option('-d, --dir <directory>', '指定输出目录', './')
+  .option('-f, --force', '强制覆盖已存在的文件', false)
+  .action((template, name, options) => {
+    console.log(chalk.green('正在生成组件...'));
+    import('../lib/commands/generate.js')
+      .then(module => {
+        try {
+          module.default(template, name, options);
+        } catch (error) {
+          console.error(chalk.red('生成失败:'), error.message);
+          process.exit(1);
+        }
+      })
+      .catch(error => {
+        console.error(chalk.red('命令执行失败:'), error.message);
+        process.exit(1);
+      });
   });
 
 
@@ -44,4 +58,4 @@ program
   });
 
 // 解析命令行参数
-program.parse(process.argv); 
+program.parse(process.argv);

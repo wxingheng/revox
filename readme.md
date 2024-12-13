@@ -22,7 +22,7 @@
 npm install -g revox
 
 # 生成组件
-revox generate rfc.module MyButton
+revox generate rfc.module MyModule
 
 # 转换现有组件为模板
 revox tool tmp ./src/components/MyComponent
