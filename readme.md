@@ -132,9 +132,12 @@ node bin/revox.mjs start
 ## example
 
 ```bash
- revox generate f rfc GroupBank
+ revox generate f rfc ExampleComponent
 
- revox generate c rfc GroupBank
+ revox generate c rfc ExampleContents
+
+ revox generate c module ExampleModule
+
 ```
 
 ## 项目结构
