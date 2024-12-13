@@ -60,5 +60,15 @@ program
     import('../lib/commands/test.js').then(module => module.default());
   });
 
+// 定义 tool 命令
+program
+  .command('tool')
+  .description('工具箱')
+  .action(() => {
+    console.log(chalk.green('正在打开工具箱...'));
+    // 调用工具箱命令的实现
+    import('../lib/commands/tool.js').then(module => module.default());
+  });
+
 // 解析命令行参数
 program.parse(process.argv); 
