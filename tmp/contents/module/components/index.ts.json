@@ -1,0 +1,7 @@
+{
+  "body": [
+    "export * from \"./SubComponent\";",
+    ""
+  ],
+  "file_name": "index.ts"
+}

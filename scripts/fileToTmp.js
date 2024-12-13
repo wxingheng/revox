@@ -31,14 +31,16 @@ function convertFileToJson(inputFilePath, outputFilePath, componentName) {
 }
 
 
-// 用户执行脚本时时的目录
- const projectRoot = process.cwd();
 
- const file_name = "index.tsx"
+ // file_name 所在的位置
+const file_name_path = "/Users/wxingheng/Coder/gitee/Revox/tmp/contents/module/components/index.ts";
+const file_name = path.basename(file_name_path);
+const projectRoot = path.resolve(file_name_path, '../');
 
-// Example usage
-const inputFilePath = path.resolve(projectRoot, file_name); // Replace with your file path
+
+const inputFilePath = file_name_path; // Replace with your file path
 const outputFilePath = path.resolve(projectRoot, `${file_name}.json`); // Replace with your desired output path
-const componentName = file_name; // Replace with your desired component name
 
-convertFileToJson(inputFilePath, outputFilePath, componentName);
+
+
+convertFileToJson(inputFilePath, outputFilePath, file_name);
