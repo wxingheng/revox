@@ -6,11 +6,12 @@
 
 ## 🎉 核心功能
 
-- **📦 一键生成标准化 React 组件/模块结构**
-- **🔧 快速将现有组件转化为可复用模板**
-- **💡 支持多种组件模板生成，灵活配置**
-- **🎨 自动生成组件相关的样式、类型、上下文和工具文件**
-- **🚀 提供快速调试与扩展支持**
+- [x] **📦 一键生成标准化 React 组件/模块结构**
+- [x] **🔧 快速将现有组件转化为可复用模板**
+- [x] **💡 支持多种组件模板生成，灵活配置**
+- [x] **🎨 自动生成组件相关的样式、类型、上下文和工具文件**
+- [x] **🚀 提供快速调试与扩展支持**
+- [ ] **📚 支持自定义模板配置与管理**
 
 ---
 
@@ -59,7 +60,7 @@ revox tool tmp MyComponent/index.tsx
 以 rfc.module 模板为例，生成的结构如下：
     
 ```bash
-    MyComponent/
+MyComponent/
 ├── components/          # 子组件目录
 │   └── SubComponent/     
 ├── context/             # Context 相关
@@ -92,12 +93,12 @@ npm link
 ### 📦 项目结构
     
 ```bash
-    revox/
+revox/
 ├── bin/                # CLI 命令入口
 ├── lib/                # 核心逻辑
 │   ├── commands/       # 命令实现
 │   └── utils/          # 工具函数
-├── .revox/             # 模板配置文件
+├── .revox/             # 默认模板配置文件
 └── example/            # 示例代码
 ```
 
@@ -133,6 +134,6 @@ revox generate rfc ExampleComponent
 ### 🙌 贡献指南
 
 欢迎贡献代码、提交功能建议或报告问题！
-- 反馈: 请通过 GitHub Issues 提交问题和建议。
+- 反馈: 请通过 (GitHub Issues)[https://github.com/wxingheng/revox/issues] 提交问题和建议。
 
 一起为更高效的 React 开发而努力！💻✨
