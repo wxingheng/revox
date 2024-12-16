@@ -1,7 +1,3 @@
-<div align="center">
-
-# Revox
-
 [![npm version](https://img.shields.io/npm/v/revox.svg)](https://www.npmjs.com/package/revox)
 [![license](https://img.shields.io/npm/l/revox.svg)](https://github.com/wxingheng/revox/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
@@ -15,6 +11,22 @@ English | [简体中文](./README.md)
 
 </div>
 
+## 🎯 Project Vision
+
+Revox was born from the pursuit of modern development efficiency and the vision of AI-assisted programming future. The entire project, from conception to release, was completed in just 3 hours, demonstrating the power of AI-driven development:
+
+- 🤖 **Embrace AI Programming** - Developed using AI programming tools like [Cursor](https://www.cursor.com/), the project went from concept to full implementation in just 3 hours, perfectly illustrating the efficiency revolution of AI-driven development
+- ⚡️ **Efficiency First** - Significantly improve daily development efficiency through intelligent tools and processes. Just as Revox's own development process, including development, testing, release, and documentation, was completed with high quality in minimal time
+- 🎨 **Best Practices** - Transform accumulated development experience and best practices into reusable tools and templates
+- 🌟 **Open Sharing** - Looking forward to building smarter and more efficient development tools through the power of the open source community
+
+> 💡 The project's [commit history](https://github.com/wxingheng/revox/commits/main/) shows that within just 3 hours, we completed the entire process from initialization to releasing version 0.0.5, including:
+> - Core functionality development
+> - Complete documentation
+> - NPM package publishing
+> - Multi-language support
+> This fully demonstrates the powerful potential of AI-assisted development.
+
 ## ✨ Features
 
 - 🎯 **Standardized Templates** - Generate React component structures following best practices with one command
@@ -23,6 +35,7 @@ English | [简体中文](./README.md)
 - ⚙️ **Highly Configurable** - Support custom templates and configuration options
 - 📦 **Ready to Use** - Built-in practical templates for quick start
 - 🛠 **Extensible** - Plugin mechanism for feature extensions
+
 
 ## 📦 Installation
 

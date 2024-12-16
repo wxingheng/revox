@@ -16,7 +16,9 @@
     "cli",
     "generator",
     "scaffold",
-    "development-tool"
+    "development-tool",
+    "ai-programming",
+    "cursor"
   ],
   "author": "wxingheng",
   "license": "MIT",
