@@ -1,11 +1,11 @@
 {
   "name": "revox",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Revox 是一个强大的 CLI 工具，帮助开发者从命令行构建、开发、测试、部署和维护 React 应用。通过 Revox，您可以简化开发流程，同时保持对项目的全面掌控。",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node ./bin/revox.mjs",
+    "dev": "node ./bin/revox.js",
     "build": "tsc",
     "test": "jest",
     "lint": "eslint . --ext .ts,.tsx",
@@ -42,7 +42,7 @@
     "typescript": "^5.3.3"
   },
   "bin": {
-    "revox": "./bin/revox.mjs"
+    "revox": "./bin/revox.js"
   },
   "engines": {
     "node": ">=16.0.0"

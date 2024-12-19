@@ -61,13 +61,13 @@ This will create a `.revox` folder in your project root for custom templates and
 
 ```bash
 # Generate standard component
-revox generate component MyComponent
+revox generate rfc.comp MyComponent
 
 # Generate complete feature module
-revox generate module MyModule
+revox generate rfc.module MyModule
 
 # Use custom template
-revox generate custom MyCustom
+revox generate rfc.custom MyCustom
 ```
 
 ## 📚 Command Details
@@ -90,10 +90,10 @@ Template management:
 
 ```bash
 # Convert component to template
-revox template convert ./src/components/MyComponent
+revox tool tmp ./src/Button
 
 # List all available templates
-revox template list
+revox tool tmp ./components/Modal
 ```
 
 ## 📁 Directory Structure

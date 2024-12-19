@@ -63,13 +63,13 @@ revox init
 
 ```bash
 # 生成标准组件
-revox generate component MyComponent
+revox generate rfc.comp MyComponent
 
 # 生成完整功能模块
-revox generate module MyModule
+revox generate rfc.module MyModule
 
 # 使用自定义模板
-revox generate custom MyCustom
+revox generate rfc.custom MyCustom
 ```
 
 ## 📚 命令详解
@@ -92,10 +92,10 @@ revox generate <template> <name> [options]
 
 ```bash
 # 将组件转换为模板
-revox template convert ./src/components/MyComponent
+revox tool tmp ./src/Button        
 
-# 列出所有可用模板
-revox template list
+# 转换整个目录
+revox tool tmp ./components/Modal  
 ```
 
 ## 📁 目录结构
