@@ -154,10 +154,6 @@ MyComponent/
 - Email：[wxingheng@outlook.com](mailto:wxingheng@outlook.com)
 - GitHub：[@wxingheng](https://github.com/wxingheng)
 
-## ⭐️ Star 历史
-
-[![Star History Chart](https://api.star-history.com/svg?repos=wxingheng/revox&type=Date)](https://star-history.com/#wxingheng/revox&Date)
-
 ---
 
 如果这个项目对你有帮助，欢迎 star 支持！ ⭐️ 

@@ -151,10 +151,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Email: [wxingheng@outlook.com](mailto:wxingheng@outlook.com)
 - GitHub: [@wxingheng](https://github.com/wxingheng)
 
-## ⭐️ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=wxingheng/revox&type=Date)](https://star-history.com/#wxingheng/revox&Date)
-
 ---
 
 If this project helps you, please consider giving it a star! ⭐️ 
