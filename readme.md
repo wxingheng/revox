@@ -69,7 +69,7 @@ revox generate rfc.comp MyComponent
 revox generate rfc.module MyModule
 
 # 使用自定义模板
-revox generate rfc.custom MyCustom
+revox generate rfc.custom<your template name> MyCustom
 ```
 
 ## 📚 命令详解
@@ -91,10 +91,10 @@ revox generate <template> <name> [options]
 模板管理：
 
 ```bash
-# 将组件转换为模板
+# 将文件夹转换为模板
 revox tool tmp ./src/Button        
 
-# 转换整个目录
+# 将文件夹转换为模板
 revox tool tmp ./components/Modal  
 ```
 
