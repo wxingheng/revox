@@ -115,6 +115,11 @@ MyComponent/
 └── README.md           # 组件文档
 ```
 
+## 最佳实践
+1. 使用 revox init 初始化配置
+2. 编写属于你自己项目的最佳实践案例
+3. 使用 revox tool tmp 将你的最佳实践案例转换为模板
+4. 就可以随时使用 revox generate 生成组件 
 
 ## 🤝 贡献指南
 
